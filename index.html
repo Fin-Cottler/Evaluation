@@ -33,12 +33,7 @@
                     const content = e.target.result;
                     array_str = JSON.stringify(csvToArray(content));
                     sessionStorage.setItem('array', array_str);
-
-                    console.log(sessionStorage.getItem('array'))
-                    // const array = JSON.parse(array_str);
-                    // for(let i = 0; i<array.length; i++){
-                    //     console.log(array[i]);
-                    // }
+                    openPage()
 
                 };
                 reader.readAsText(file);
