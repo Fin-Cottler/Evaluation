@@ -34,6 +34,7 @@
                     array_str = JSON.stringify(csvToArray(content));
                     sessionStorage.setItem('array', array_str);
                     openPage()
+                    console.log("completion")
 
                 };
                 reader.readAsText(file);
