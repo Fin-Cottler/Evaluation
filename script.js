@@ -269,7 +269,7 @@ function fillCharts(){
     for(let i = 0; i<csv.length; i++){
         //get page
         const page = document.getElementById(Object.values(csv[i])[0]);
-        console.log(page)
+        console.log(csv[i])[0])
         //get content element from page
         const content = page.children
         //get all cell elements from content
