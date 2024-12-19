@@ -296,8 +296,7 @@ function fillCharts(){
 }
 
 function printDiv() {
-    divName = document.getElementById("container");
-    var printContents = document.getElementById(divName).innerHTML;
+    var printContents = document.getElementById("container").innerHTML;
     var originalContents = document.body.innerHTML;
 
     document.body.innerHTML = printContents;
