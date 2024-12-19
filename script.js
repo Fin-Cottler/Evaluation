@@ -259,6 +259,9 @@ function addEval(){
 
 function fillCharts(){
     const csv = JSON.parse(sessionStorage.getItem('array'));
+    for(let i = 0; i < csv.length; i++) {
+        console.log(csv[i]);
+    }
     
     
 
@@ -271,9 +274,9 @@ function fillCharts(){
         const page = document.getElementById(csv[i].Id);
         
         //get content element from page
-        const content = page.children
+        const content = page.children;
         //get all cell elements from content
-        const cells = content[0].children
+        const cells = content[0].children;
         //all row elements 
         const allRows = [];
 
